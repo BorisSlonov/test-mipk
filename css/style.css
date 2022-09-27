@@ -1,0 +1,197 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    color: rgba(0, 27, 91, 1);
+}
+
+ul {
+    list-style: none;
+}
+
+.fw500 {
+    font-weight: 500;
+}
+
+.btn {
+    background-color: #FF0000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #9C0000;
+}
+
+.container {
+    max-width: 1410px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header {
+    padding: 15px 0;
+}
+
+.header-top__item img {
+    margin-right: 10px;
+}
+
+.header-top__item:first-child {
+    flex-basis: 160px;
+}
+
+.header-top__item:nth-child(2) {
+    flex-basis: 100px;
+}
+
+.header-top__item:nth-child(3) {
+    flex-basis: 265px;
+}
+
+.header-top__item:nth-child(4) {
+    flex-basis: 190px;
+}
+
+.header-top__item:nth-child(5) {
+    flex-basis: 165px;
+}
+
+
+.header-top__item_social {
+    font-size: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.header-top__item_geo {
+    display: flex;
+    align-items: center;
+}
+
+.header-top__link {
+    position: relative;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.header-top__link::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: rgba(0, 27, 91, 1);
+    opacity: .7;
+    transition: all .3s;
+
+}
+
+.header-top__link:hover::after {
+    width: 100%;
+}
+
+.header-top__link_phone p {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-top__link_phone p span:first-child {
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+
+.header-top__link_phone p span:last-child {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.header-top__item_btn {
+    display: flex;
+}
+
+.header__nav {
+    margin-top: 20px;
+}
+
+.nav__ul {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.nav__li {
+    width: 100%;
+    text-align: center;
+}
+
+.nav__ul a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav__ul span {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 10px 0 15px;
+    cursor: pointer;
+    border-top: 3px solid transparent;
+    transition: all .3s;
+}
+
+.nav__sub-ul {
+    text-align: center;
+    margin-top: -1px;
+    border-bottom: 2px solid rgba(0, 27, 91, 1);
+    padding-bottom: 10px;
+    padding-top: 10px;
+    display: none;
+    box-shadow: 6px 0 4px -4px rgba(34, 34, 34, 0.144), -6px 0 4px -4px rgba(34, 34, 34, 0.144);
+    -moz-box-shadow: 6px 0 4px -4px rgba(34, 34, 34, 0.144), -6px 0 4px -4px rgba(34, 34, 34, 0.144);
+    -webkit-box-shadow: 6px 0 4px -4px rgba(34, 34, 34, 0.144), -6px 0 4px -4px rgba(34, 34, 34, 0.144);
+}
+
+.nav__sub-ul:hover {
+    display: block;
+}
+
+.nav__ul span:hover {
+    color: red;
+    border-top-color: #6695FF;
+    flex-basis: 100%;
+
+}
+
+.nav__ul span:hover+.nav__sub-ul {
+    display: block;
+}
+
+.nav__sub-li:not(:first-child) {
+    margin-top: 10px;
+}
