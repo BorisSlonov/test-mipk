@@ -270,9 +270,17 @@ img {
     display: none;
 }
 
+.nav__li_social {
+    display: none;
+}
+
 @media(max-width:945px) {
     .header {
         overflow-y: auto;
+    }
+
+    .nav__li_social {
+        display: block;
     }
 
     .header-top {
