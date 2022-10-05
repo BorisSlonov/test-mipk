@@ -233,9 +233,11 @@ img {
 
 }
 
+
+
 .nav__ul span:hover+.nav__sub-ul {
     display: block;
-    height: 100%;
+
     transform: scaleX(100%);
 }
 
@@ -288,12 +290,17 @@ img {
         margin-left: 50px;
     }
 
+
     .nav__ul {
         position: fixed;
         overflow-y: auto;
         flex-direction: column;
         left: -100%;
         transition: all .3s;
+    }
+
+    .nav__sub-ul {
+        /* display: block; */
     }
 
     .menu_active {
@@ -352,8 +359,14 @@ img {
     }
 
     .nav__sub-ul {
-        transform: scale(100%, 0);
         border-radius: 0;
+
+    }
+
+    .nav__li:hover .nav__sub-ul {
+        height: auto;
+        display: none;
+        transform: scale(100%, 0); 
     }
 
     .header-top__item_social-mob {
